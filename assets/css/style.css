@@ -489,24 +489,11 @@ main {
 
 
 
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
-.about {
-  max-width: 800px; /* Set a maximum width for the about section */
-  margin: 0 auto; /* Center the section horizontally */
-  padding: 20px; /* Add padding for spacing */
-  background-color: #fff; /* Adjust background color as needed */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  border-radius: 10px; /* Add rounded corners */
-}
-
-.about .article-title {
-  margin-bottom: 15px;
-}
+.about .article-title { margin-bottom: 15px; }
 
 .about-text {
   color: var(--light-gray);
@@ -515,9 +502,7 @@ main {
   line-height: 1.6;
 }
 
-.about-text p {
-  margin-bottom: 10px; /* or even 5px if you want it tighter */
-}
+.about-text p { margin-bottom: 15px; }
 
 
 
