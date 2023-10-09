@@ -516,8 +516,9 @@ main {
 }
 
 .about-text p {
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* or even 5px if you want it tighter */
 }
+
 
 
 
