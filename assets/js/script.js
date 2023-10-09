@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-
 'use strict';
 
 
@@ -159,4 +157,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-  });
