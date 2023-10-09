@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rey Zhang - Business Analyst</title>
+  <title>vCard - Personal Portfolio</title>
 
   <!--
     - favicon
@@ -26,62 +26,134 @@
 </head>
 
 <body>
-    <main>
-        <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./assets/images/图像.png" alt="Rey Zhang" width="80">
-                </figure>
-                <div class="info-content">
-                    <h1 class="name" title="Rey Zhang">Rey Zhang</h1>
-                    <p class="title">Business Analyst</p>
-                </div>
-                <button class="info_more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <div class="sidebar-info_more">
-                <div class="separator"></div>
-                <ul class="contacts-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:reyzhang418@gmail.com" class="contact-link">reyzhang418@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-                            <a href="tel:585-978-1993" class="contact-link">585-978-1993</a>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>Seattle, WA</address>
-                        </div>
-                    </li>
-                </ul>
-                              <div class="separator"></div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
             </div>
-                              <ul class="social-list">
-                    <li class="social-item">
-                        <a href="https://linkedin.com/in/rey-zhang" target="_blank" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-        </aside>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sacramento, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
 
     <!--
       - #main-content
@@ -110,12 +182,19 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
         </ul>
 
       </nav>
+
+
+
 
 
       <!--
@@ -130,83 +209,102 @@
 
         <section class="about-text">
           <p>
-           I'm Rey Zhang, a Business Analyst based in Seattle, WA. With a strong foundation in Business Analytics, 
-            I'm passionate 
-            about harnessing the power of data to derive actionable insights, 
-            using tools 
-            like SQL, Python, R, Tableau, and Power BI.
-
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
           <p>
-            Over the years, I've collaborated with renowned organizations like Blue Nile and innovative startups such as Yemoo APP. 
-            My analytical 
-            approach is deeply rooted in understanding business objectives, 
-            ensuring that 
-            every insight I provide aligns with strategic goals. 
-            From preprocessing 
-            vast datasets and developing ETL processes to crafting predictive models, 
-            I'm dedicated 
-            to transforming data into compelling narratives that propel business growth.
-
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
           </p>
         </section>
 
 
-        <!-- 
-    - service 
--->
-<section class="service">
-    <h3 class="h3 service-title">What I'm Specialized In</h3>
-    <ul class="service-list">
-        <li class="service-item">
-            <div class="service-icon-box">
-                <img src="./assets/images/analysis-program-svgrepo-com.svg" alt="analytics icon" width="40">
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analytics</h4>
-                <p class="service-item-text">
-                    Analyzing large datasets to derive meaningful insights and drive business improvements.
-                </p>
-            </div>
-        </li>
-        <li class="service-item">
-            <div class="service-icon-box">
-                <img src="./assets/images/database-svgrepo-com.svg" alt="SQL icon" width="40">
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">SQL & Database Management</h4>
-                <p class="service-item-text">
-                    Expertise in SQL for data extraction, manipulation, and management in various database systems.
-                </p>
-            </div>
-        </li>
-        <li class="service-item">
-            <div class="service-icon-box">
-                <img src="./assets/images/chart-svgrepo-com.svg" alt="visualization icon" width="40">
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Visualization</h4>
-                <p class="service-item-text">
-                    Creating compelling visualizations using tools like Tableau and Power BI to represent complex data.
-                </p>
-            </div>
-        </li>
-        <li class="service-item">
-            <div class="service-icon-box">
-                <img src="./assets/images/predictive-svgrepo-com.svg" alt="machine learning icon" width="40">
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">Predictive Analytics</h4>
-                <p class="service-item-text">
-                    Utilizing machine learning techniques to predict future trends and behaviors.
-                </p>
-            </div>
-        </li>
-    </ul>
-</section>
+        <!--
+          - service
+        -->
 
-         <!--
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
           - testimonials
         -->
 
@@ -220,15 +318,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Jimmy Fu" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jimmy Fu</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Rey's ability to transform raw data into intuitive dashboards was a game-changer for Yemoo APP. 
-                    His presentations always offered clarity and drove actionable strategies. A true asset to our team!
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -239,18 +340,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Zi Chen" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Zi Chen</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Rey's work at Chaoyouai was exemplary. His ability to craft intuitive dashboards and 
-                    deep-dive into data analysis greatly 
-                    enhanced our user understanding. His insights were pivotal in optimizing 
-                    our user experience and driving our growth strategy. 
-                    A truly outstanding intern with a bright future in analytics.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -261,17 +362,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Elena Thompson" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Elena Thompson</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Rey's impact at SPIRITNYS.org was immediate and transformative. His adept data analysis pinpointed areas for website optimization, 
-                    leading to a surge in organic visitors. Moreover, his strategies in paid marketing and SEO played a
-                    crucial role in significantly boosting our online presence and donations. 
-                    Rey's blend of analytical and marketing skills is truly commendable.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -282,18 +384,18 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Darsh Gupta" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Darsh Gupta</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Rey's work was transformative. Handling datasets exceeding 500,000 rows, 
-                    his mastery in ETL processes and big data analytics was evident. His ability to derive meaningful 
-                    insights from vast data sets was unparalleled. 
-                    Rey's expertise significantly enhanced our user experience and business strategies. 
-                    A true asset to any data-driven team.
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                   </p>
                 </div>
 
@@ -349,301 +451,686 @@
 
         </div>
 
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
       </article>
 
 
-     <!--
-    - #RESUME
--->
 
-<article class="resume" data-page="resume">
 
-    <header>
-        <h2 class="h2 article-title">Resume</h2>
-    </header>
 
-    <section class="timeline">
+      <!--
+        - #RESUME
+      -->
 
-        <div class="title-wrapper">
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
             <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
-        </div>
+          </div>
 
-        <ol class="timeline-list">
+          <ol class="timeline-list">
 
             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">University of Washington</h4>
-                <span>May 2022 — Dec 2023</span>
-                <p class="timeline-text">
-                    Master of Science (MS), Business Analytics. <br>Specialized in Data Management (SQL), Supply Chain Management (Excel), and Predictive Analytics (Python).
-                </p>
+
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+              <span>2007 — 2008</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
             </li>
 
             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">University of Rochester</h4>
-                <span>Aug 2018 — May 2022</span>
-                <p class="timeline-text">
-                    Bachelor of Science (BS) in Business Analytics & Marketing and Bachelor of Arts (BA) in Digital Media Study. <br>Focused on Digital Marketing, Marketing Analytics, and Operations Research using R.
-                </p>
+
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+              <span>2006 — 2007</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
             </li>
 
-        </ol>
+            <li class="timeline-item">
 
-    </section>
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
 
-    <section class="timeline">
+              <span>2002 — 2004</span>
 
-        <div class="title-wrapper">
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
             <div class="icon-box">
-                <ion-icon name="briefcase-outline"></ion-icon>
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
-        </div>
+          </div>
 
-        <ol class="timeline-list">
-
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Blue Nile </h4>
-                <span>March 2023 — June 2023</span>
-                <p class="timeline-text">
-                    Data Analyst in UW Capstone Project. Managed large datasets, conducted ETL processes, and analyzed user behavior metrics using SQL and Python. Delivered data-driven recommendations to optimize website design.
-                </p>
-            </li>
+          <ol class="timeline-list">
 
             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Yemoo APP</h4>
-                <span>October 2019 — June 2022</span>
-                <p class="timeline-text">
-                    Part-time Product Analyst. Analyzed user data, performed explanatory data analysis, and implemented KNN and RFM models to optimize user experience.
-                </p>
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
             </li>
 
             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">SPIRITNYS.org</h4>
-                <span>August 2021 — May 2022</span>
-                <p class="timeline-text">
-                    Business Consultant Intern. Applied funnel analysis via Google analytics to improve website traffic and designed A/B tests on social media to increase CTR.
-                </p>
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
             </li>
 
             <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Chengdu Chaoyouai Technology Co., Ltd.</h4>
-                <span>January 2021 — April 2021</span>
-                <p class="timeline-text">
-                    Growth Analyst Intern. Conducted statistical analysis among business metrics, evaluated user characteristics, and designed promotional plans.
-                </p>
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
             </li>
 
-            <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">BlueTie Inc.</h4>
-                <span>September 2020 — December 2020</span>
-                <p class="timeline-text">
-                    Market Analyst. Conducted competitor analysis, reviewed website traffic, and optimized social media strategy.
-                </p>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
             </li>
 
-        </ol>
+            <li class="skills-item">
 
-    </section>
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
 
-  
-  <section class="timeline">
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
 
-    <div class="title-wrapper">
-        <div class="icon-box">
-            <ion-icon name="code-outline"></ion-icon>
-        </div>
+            </li>
 
-        <h3 class="h3">Skills</h3>
-    </div>
+            <li class="skills-item">
 
-    <ol class="timeline-list">
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
 
-        <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Programming Languages</h4>
-            <p class="timeline-text">
-                Python (Pandas, Matplotlib, NumPy), R, and SPSS
-            </p>
-        </li>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
 
-        <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Statistical Techniques</h4>
-            <p class="timeline-text">
-                Descriptive Analytics (Hypothesis Testing, Sampling Distribution, Random Variables), Predictive Analytics (Linear/Logistic Regression, Crystal Ball, Random Forest, Classification, Clustering)
-            </p>
-        </li>
+            </li>
 
-        <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">SEO, Big Data Techniques & Visualization</h4>
-            <p class="timeline-text">
-                MySQL, Text Analysis, Advanced Excel, PowerBI, Tableau, Adobe Analytics, Google Analytics 4, SEMrush
-            </p>
-        </li>
+            <li class="skills-item">
 
-        <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Domain Knowledge</h4>
-            <p class="timeline-text">
-                Jewelry, Non-Profit, Online Education, E-commerce, Social Media, Dating App, SaaS
-            </p>
-        </li>
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
 
-    </ol>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
 
-</section>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
-<!--
-    - #PORTFOLIO
--->
-<article class="resume" data-page="resume">
 
-    <header>
-        <h2 class="h2 article-title">Portfolio</h2>
-    </header>
 
-    <section class="projects">
 
-        <ul class="filter-list">
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
 
             <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>All</button>
             </li>
+
             <li class="filter-item">
-                <button data-filter-btn>Marketing Analytics</button>
+              <button data-filter-btn>Web design</button>
             </li>
+
             <li class="filter-item">
-                <button data-filter-btn>Predictive Modeling</button>
+              <button data-filter-btn>Applications</button>
             </li>
+
             <li class="filter-item">
-                <button data-filter-btn>Customers Analysis</button>
-            </li>
-            <li class="filter-item">
-                <button data-filter-btn>Tableau Dashboard</button>
+              <button data-filter-btn>Web development</button>
             </li>
 
-        </ul>
+          </ul>
 
-        <ul class="project-list">
+          <div class="filter-select-box">
 
-            <li class="project-item active" data-filter-item data-category="Marketing Analytics">
-                <a href="https://docs.google.com/presentation/d/1KK2lTGYcLJ3xGNRAN7_Fz7QFgItzanfb2qBxWZXdHlU/edit#slide=id.p10" target="_blank">
-                    <figure class="project-img">
-                        <div class="project-item-icon-box">
-                            <ion-icon name="eye-outline"></ion-icon>
-                        </div>
-                        <!-- You can replace the image source with an appropriate image for the project -->
-                        <img src="./assets/images/project-1.jpg" alt="Harry & David - Marketing Analytics Project" loading="lazy">
-                    </figure>
-                    <h3 class="project-title">Harry & David - Marketing Analytics Project</h3>
-                    <p class="project-category">Marketing Analytics</p>
-                </a>
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
             </li>
 
-        <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
 
-    <!-- Harry & David - Marketing Analytics Project -->
-    <li class="project-item active" data-filter-item data-category="Marketing Analytics">
-        <a href="https://docs.google.com/presentation/d/1KK2lTGYcLJ3xGNRAN7_Fz7QFgItzanfb2qBxWZXdHlU/edit#slide=id.p10" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <!-- You can replace the image source with an appropriate image for the project -->
-                <img src="./assets/images/project-1.jpg" alt="Harry & David - Marketing Analytics Project" loading="lazy">
-            </figure>
-            <h3 class="project-title">Harry & David - Marketing Analytics Project</h3>
-            <p class="project-category">Marketing Analytics</p>
-        </a>
-    </li>
+                  </div>
 
-    <!-- Spotify Song ranking Predictive project -->
-    <li class="project-item active" data-filter-item data-category="Predictive Modeling">
-        <a href="https://docs.google.com/presentation/d/1ZT1jsjGEpNWmtu0KUmsVftzJKxdvLFxMoby72FyAluA/edit#slide=id.p" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-2.jpg" alt="Spotify Song ranking Predictive project" loading="lazy">
-            </figure>
-            <h3 class="project-title">Spotify Song ranking Predictive project</h3>
-            <p class="project-category">Predictive Modeling</p>
-        </a>
-    </li>
+                  </div>
 
-        <!-- OKCupid Users Analytics -->
-    <li class="project-item active" data-filter-item data-category="Customers Analysis">
-        <a href="https://docs.google.com/presentation/d/1vkYmjwMRTL6fpVOBqfAyuo_qTR6CZM1dY1YVgzJKz_A/edit?usp=sharing" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-3.jpg" alt="OKCupid Users Analytics" loading="lazy">
-            </figure>
-            <h3 class="project-title">OKCupid Users Analytics</h3>
-            <p class="project-category">Customers Analysis</p>
-        </a>
-    </li>
+                  </div>
 
-    <!-- World Happiness Analysis -->
-    <li class="project-item active" data-filter-item data-category="Predictive Modeling">
-        <a href="https://docs.google.com/presentation/d/1wsie6zYB3d4wM1HW8uM2R539WHBGg9yRbJoeatBp-Nc/edit#slide=id.g105db16643d_0_29" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-4.jpg" alt="World Happiness Analysis" loading="lazy">
-            </figure>
-            <h3 class="project-title">World Happiness Analysis</h3>
-            <p class="project-category">Predictive Modeling</p>
-        </a>
-    </li>
+                  </div>
 
-    <!-- Tableau Dashboard of Seattle Building Permits -->
-    <li class="project-item active" data-filter-item data-category="Tableau Dashboard">
-        <a href="https://public.tableau.com/app/profile/rey.zhang/viz/SeattleBuildingPermits_16968081835470/Dashboard1?publish=yes" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="./assets/images/project-5.jpg" alt="Seattle Building Permits" loading="lazy">
-            </figure>
-            <h3 class="project-title">Seattle Building Permits</h3>
-            <p class="project-category">Tableau Dashboard</p>
-        </a>
-    </li>
+                  </div>
 
-    <!-- Tableau Dashboard of Enchantment Permit Area Lottery Recommendation -->
-    <li class="project-item active" data-filter-item data-category="Tableau Dashboard">
-        <a href="https://public.tableau.com/app/profile/rey.zhang/viz/EnchantmentPermit2021Analysis/Team8" target="_blank">
-            <figure class="project-img">
-                <div class="project-item-icon-box">
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
                 </div>
-                <img src="./assets/images/project-6.jpg" alt="Enchantment Permit Area Lottery Recommendation" loading="lazy">
-            </figure>
-            <h3 class="project-title">Enchantment Permit Area Lottery Recommendation</h3>
-            <p class="project-category">Tableau Dashboard</p>
-        </a>
-    </li>
 
-</ul>
+              </a>
+            </li>
 
-</ul>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
-        </ul>
 
-    </section>
-
-</article>
-
-
-
-</article>
 
 
       <!--
@@ -694,7 +1181,11 @@
   </main>
 
 
-<!--
+
+
+
+
+  <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
