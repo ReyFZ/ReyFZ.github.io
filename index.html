@@ -497,10 +497,7 @@
 <!--
     - #PORTFOLIO
 -->
-
-why the category link is not working: <!--
-    - #PORTFOLIO
--->
+      
 <article class="portfolio" data-page="portfolio">
     <header>
         <h2 class="h2 article-title">Portfolio</h2>
@@ -508,62 +505,56 @@ why the category link is not working: <!--
     <section class="projects">
         <ul class="filter-list">
             <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+                <button class="active" data-filter-btn="all">All</button>
             </li>
             <li class="filter-item">
-                <button data-filter-btn>Marketing Analytics</button>
+                <button data-filter-btn="predictive modeling">Predictive Modeling</button>
             </li>
             <li class="filter-item">
-                <button data-filter-btn>Predictive Modeling</button>
+                <button data-filter-btn="customers analysis">Customers Analysis</button>
             </li>
             <li class="filter-item">
-                <button data-filter-btn>Customers Analysis</button>
-            </li>
-            <li class="filter-item">
-                <button data-filter-btn>Tableau Dashboard</button>
+                <button data-filter-btn="tableau dashboard">Tableau Dashboard</button>
             </li>
         </ul>
         <div class="filter-select-box">
             <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-value" data-select-value>Select category</div>
                 <div class="select-icon">
                     <ion-icon name="chevron-down"></ion-icon>
                 </div>
             </button>
             <ul class="select-list">
                 <li class="select-item">
-                    <button data-select-item>All</button>
+                    <button data-select-item="all">All</button>
                 </li>
                 <li class="select-item">
-                    <button data-select-item>Marketing Analytics</button>
+                    <button data-select-item="predictive modeling">Predictive Modeling</button>
                 </li>
                 <li class="select-item">
-                    <button data-select-item>Predictive Modeling</button>
+                    <button data-select-item="customers analysis">Customers Analysis</button>
                 </li>
                 <li class="select-item">
-                    <button data-select-item>Customers Analysis</button>
-                </li>
-                <li class="select-item">
-                    <button data-select-item>Tableau Dashboard</button>
+                    <button data-select-item="tableau dashboard">Tableau Dashboard</button>
                 </li>
             </ul>
         </div>
         <ul class="project-list">
-            <!-- Harry & David - Marketing Analytics Project -->
-             <li class="project-item active" data-filter-item data-category="Customers Analysis">
+            <!-- Harry & David - Analytics Project -->
+              <li class="project-item" data-filter-item data-category="customers analysis">
                 <a href="https://docs.google.com/presentation/d/1KK2lTGYcLJ3xGNRAN7_Fz7QFgItzanfb2qBxWZXdHlU/edit#slide=id.p10" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
                             <ion-icon name="eye-outline"></ion-icon>
                         </div>
-                        <img src="./assets/images/harrydavid.png"  alt="Harry & David - Marketing Analytics Project" loading="lazy">
+                        <img src="./assets/images/harrydavid.png"  alt="Harry & David - Analytics Project" loading="lazy">
                     </figure>
-                    <h3 class="project-title">Harry & David - Marketing Analytics Project</h3>
+                    <h3 class="project-title">Harry & David Project</h3>
                     <p class="project-category">Customers Analysis</p>
                 </a>
             </li>
             <!-- Spotify Song ranking Predictive project -->
-            <li class="project-item active" data-filter-item data-category="Predictive Modeling">
+            <li class="project-item" data-filter-item data-category="predictive modeling">
                 <a href="https://docs.google.com/presentation/d/1ZT1jsjGEpNWmtu0KUmsVftzJKxdvLFxMoby72FyAluA/edit#slide=id.p" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -576,7 +567,7 @@ why the category link is not working: <!--
                 </a>
             </li>
             <!-- OKCupid Users Analytics -->
-            <li class="project-item active" data-filter-item data-category="Customers Analysis">
+            <li class="project-item" data-filter-item data-category="customers analysis">
                 <a href="https://docs.google.com/presentation/d/1vkYmjwMRTL6fpVOBqfAyuo_qTR6CZM1dY1YVgzJKz_A/edit?usp=sharing" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -589,7 +580,7 @@ why the category link is not working: <!--
                 </a>
             </li>
             <!-- World Happiness Analysis -->
-            <li class="project-item active" data-filter-item data-category="Predictive Modeling">
+            <li class="project-item" data-filter-item data-category="predictive modeling">
                 <a href="https://docs.google.com/presentation/d/1wsie6zYB3d4wM1HW8uM2R539WHBGg9yRbJoeatBp-Nc/edit#slide=id.g105db16643d_0_29" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -602,7 +593,7 @@ why the category link is not working: <!--
                 </a>
             </li>
             <!-- Tableau Dashboard of Seattle Building Permits -->
-            <li class="project-item active" data-filter-item data-category="Tableau Dashboard">
+            <li class="project-item active" data-filter-item data-category="tableau dashboard">
                 <a href="https://public.tableau.com/app/profile/rey.zhang/viz/SeattleBuildingPermits_16968081835470/Dashboard1?publish=yes" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
@@ -615,7 +606,7 @@ why the category link is not working: <!--
                 </a>
             </li>
             <!-- Tableau Dashboard of Enchantment Permit Area Lottery Recommendation -->
-            <li class="project-item active" data-filter-item data-category="Tableau Dashboard">
+            <li class="project-item active" data-filter-item data-category="tableau dashboard">
                 <a href="https://public.tableau.com/app/profile/rey.zhang/viz/EnchantmentPermit2021Analysis/Team8" target="_blank">
                     <figure class="project-img">
                         <div class="project-item-icon-box">
