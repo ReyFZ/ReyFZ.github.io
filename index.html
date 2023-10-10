@@ -497,6 +497,10 @@
 <!--
     - #PORTFOLIO
 -->
+
+why the category link is not working: <!--
+    - #PORTFOLIO
+-->
 <article class="portfolio" data-page="portfolio">
     <header>
         <h2 class="h2 article-title">Portfolio</h2>
@@ -505,6 +509,9 @@
         <ul class="filter-list">
             <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+                <button data-filter-btn>Marketing Analytics</button>
             </li>
             <li class="filter-item">
                 <button data-filter-btn>Predictive Modeling</button>
@@ -516,6 +523,31 @@
                 <button data-filter-btn>Tableau Dashboard</button>
             </li>
         </ul>
+        <div class="filter-select-box">
+            <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+            </button>
+            <ul class="select-list">
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                    <button data-select-item>Marketing Analytics</button>
+                </li>
+                <li class="select-item">
+                    <button data-select-item>Predictive Modeling</button>
+                </li>
+                <li class="select-item">
+                    <button data-select-item>Customers Analysis</button>
+                </li>
+                <li class="select-item">
+                    <button data-select-item>Tableau Dashboard</button>
+                </li>
+            </ul>
+        </div>
         <ul class="project-list">
             <!-- Harry & David - Marketing Analytics Project -->
              <li class="project-item active" data-filter-item data-category="Customers Analysis">
